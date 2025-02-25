@@ -42,8 +42,8 @@ cust_dict = {
     "CUST005" : {"cust_name": "Eca", "cust_age": "30", "cust_gender": "Male", "cust_address": "Bekasi", "cust_identity_numb": "56789", "cust_numb": "081555555555", "cust_loyalty": "Non_Loyalty"},
     "CUST006" : {"cust_name": "Faza", "cust_age": "24", "cust_gender": "Female", "cust_address": "Bandung", "cust_identity_numb": "67890", "cust_numb": "081666666666", "cust_loyalty": "Non_Loyalty"},
     "CUST007" : {"cust_name": "Gea", "cust_age": "26", "cust_gender": "Female", "cust_address": "Surabaya", "cust_identity_numb": "78901", "cust_numb": "081777777777", "cust_loyalty": "Non_Loyalty"},
-    "CUST008" : {"cust_name": "Hasan", "cust_age": "29", "cust_gender": "Female", "cust_address": "Semarang", "cust_identity_numb": "89012", "cust_numb": "081888888888", "cust_loyalty": "Non_Loyalty"},
-    "CUST009" : {"cust_name": "Ina", "cust_age": "35", "cust_gender": "Male", "cust_address": "Yogyakarta", "cust_identity_numb": "90123", "cust_numb": "081999999999", "cust_loyalty": "Non_Loyalty"},
+    "CUST008" : {"cust_name": "Hasan", "cust_age": "29", "cust_gender": "Male", "cust_address": "Semarang", "cust_identity_numb": "89012", "cust_numb": "081888888888", "cust_loyalty": "Non_Loyalty"},
+    "CUST009" : {"cust_name": "Ina", "cust_age": "35", "cust_gender": "Female", "cust_address": "Yogyakarta", "cust_identity_numb": "90123", "cust_numb": "081999999999", "cust_loyalty": "Non_Loyalty"},
     "CUST010" : {"cust_name": "Joko", "cust_age": "40", "cust_gender": "Male", "cust_address": "Solo", "cust_identity_numb": "01234", "cust_numb": "081000000000", "cust_loyalty": "Non_Loyalty"},
 }
 
@@ -98,54 +98,64 @@ def emp_view():
 
 booking_dict = {
     "BK001": {"cust_id": "CUST001", "cust_name": "Andi", "reserved_by": "Andi", "room_no": "1001",
-              "arr_date": "07/02/2025", "dpt_date": "08/02/2025", "days_stay": 1, "room_status": "", "price": 1000000,
-              "discount": "0", "hotel_tax": "100000", "ppn": "110000", "service_tax": "0",
+              "arr_date": "07/02/2025", "dpt_date": "08/02/2025", "days_stay": 1, "room_status": "", 
+              "price": 1000000, "discount": 0, 
+              "hotel_tax": 100000, "ppn": 110000, "service_tax": 0,
               "total_price": 1210000, "total_payment": 1210000, "change": 0, "payment_method": "Debit Card", "notes": ""},
-
+    
     "BK002": {"cust_id": "CUST002", "cust_name": "Budi", "reserved_by": "Budi", "room_no": "2001",
-              "arr_date": "10/02/2025", "dpt_date": "12/02/2025", "days_stay": 2, "room_status": "", "price": 1000000,
-              "discount": "5", "hotel_tax": "190000", "ppn": "209000", "service_tax": "0",
-              "total_price": 2399000, "total_payment": 2399000, "change": 0, "payment_method": "Credit Card", "notes": ""},
-
+              "arr_date": "10/02/2025", "dpt_date": "12/02/2025", "days_stay": 2, "room_status": "", 
+              "price": 400000, "discount": 0, 
+              "hotel_tax": 80000, "ppn": 88000, "service_tax": 0,
+              "total_price": 968000, "total_payment": 968000, "change": 0, "payment_method": "Credit Card", "notes": ""},
+    
     "BK003": {"cust_id": "CUST003", "cust_name": "Cinta", "reserved_by": "Cinta", "room_no": "1003",
-              "arr_date": "09/02/2025", "dpt_date": "13/02/2025", "days_stay": 4, "room_status": "", "price": 600000,
-              "discount": "10", "hotel_tax": "216000", "ppn": "237600", "service_tax": "0",
-              "total_price": 2613600, "total_payment": 2613600, "change": 0, "payment_method": "Bank Transfer", "notes": ""},
-
+              "arr_date": "09/02/2025", "dpt_date": "13/02/2025", "days_stay": 4, "room_status": "", 
+              "price": 1000000, "discount": 0, 
+              "hotel_tax": 400000, "ppn": 440000, "service_tax": 0,
+              "total_price": 4840000, "total_payment": 4840000, "change": 0, "payment_method": "Bank Transfer", "notes": ""},
+    
     "BK004": {"cust_id": "CUST004", "cust_name": "Dinda", "reserved_by": "Dinda", "room_no": "2003",
-              "arr_date": "12/02/2025", "dpt_date": "15/02/2025", "days_stay": 3, "room_status": "", "price": 400000,
-              "discount": "5", "hotel_tax": "114000", "ppn": "125400", "service_tax": "0",
-              "total_price": 1379400, "total_payment": 1379400, "change": 0, "payment_method": "QRIS", "notes": ""},
-
+              "arr_date": "12/02/2025", "dpt_date": "15/02/2025", "days_stay": 3, "room_status": "", 
+              "price": 400000, "discount": 0, 
+              "hotel_tax": 120000, "ppn": 132000, "service_tax": 0,
+              "total_price": 1352000, "total_payment": 1352000, "change": 0, "payment_method": "QRIS", "notes": ""},
+    
     "BK005": {"cust_id": "CUST001", "cust_name": "Andi", "reserved_by": "Andi", "room_no": "1002",
-              "arr_date": "15/02/2025", "dpt_date": "17/02/2025", "days_stay": 2, "room_status": "", "price": 400000,
-              "discount": "0", "hotel_tax": "80000", "ppn": "88000", "service_tax": "0",
-              "total_price": 968000, "total_payment": 1000000, "change": 32000, "payment_method": "Cash", "notes": ""},
-
+              "arr_date": "15/02/2025", "dpt_date": "17/02/2025", "days_stay": 2, "room_status": "", 
+              "price": 1000000, "discount": 0, 
+              "hotel_tax": 200000, "ppn": 220000, "service_tax": 0,
+              "total_price": 2420000, "total_payment": 2500000, "change": 80000, "payment_method": "Cash", "notes": ""},
+    
     "BK006": {"cust_id": "CUST005", "cust_name": "Eca", "reserved_by": "Eca", "room_no": "3002",
-              "arr_date": "18/02/2025", "dpt_date": "19/02/2025", "days_stay": 1, "room_status": "", "price": 750000,
-              "discount": "5", "hotel_tax": "71250", "ppn": "78375", "service_tax": "0",
-              "total_price": 821625, "total_payment": 821625, "change": 0, "payment_method": "GL", "notes": ""},
-
+              "arr_date": "18/02/2025", "dpt_date": "19/02/2025", "days_stay": 1, "room_status": "", 
+              "price": 600000, "discount": 0, 
+              "hotel_tax": 60000, "ppn": 66000, "service_tax": 0,
+              "total_price": 726000, "total_payment": 726000, "change": 0, "payment_method": "GL", "notes": ""},
+    
     "BK007": {"cust_id": "CUST006", "cust_name": "Faza", "reserved_by": "Faza", "room_no": "1001",
-              "arr_date": "20/02/2025", "dpt_date": "23/02/2025", "days_stay": 3, "room_status": "", "price": 500000,
-              "discount": "10", "hotel_tax": "135000", "ppn": "148500", "service_tax": "0",
-              "total_price": 1633500, "total_payment": 1633500, "change": 0, "payment_method": "QRIS", "notes": ""},
-
+              "arr_date": "20/02/2025", "dpt_date": "23/02/2025", "days_stay": 3, "room_status": "", 
+              "price": 1000000, "discount": 0, 
+              "hotel_tax": 300000, "ppn": 330000, "service_tax": 0,
+              "total_price": 3630000, "total_payment": 3630000, "change": 0, "payment_method": "QRIS", "notes": ""},
+    
     "BK008": {"cust_id": "CUST007", "cust_name": "Gea", "reserved_by": "Gea", "room_no": "1001",
-              "arr_date": "24/02/2025", "dpt_date": "27/02/2025", "days_stay": 3, "room_status": "", "price": 450000,
-              "discount": "0", "hotel_tax": "135000", "ppn": "148500", "service_tax": "0",
-              "total_price": 1633500, "total_payment": 1650000, "change": 16500, "payment_method": "Cash", "notes": ""},
-
+              "arr_date": "24/02/2025", "dpt_date": "27/02/2025", "days_stay": 3, "room_status": "", 
+              "price": 1000000, "discount": 0, 
+              "hotel_tax": 300000, "ppn": 330000, "service_tax": 0,
+              "total_price": 3630000, "total_payment": 3650000, "change": 20000, "payment_method": "Cash", "notes": ""},
+    
     "BK009": {"cust_id": "CUST008", "cust_name": "Hasan", "reserved_by": "Hasan", "room_no": "1002",
-              "arr_date": "28/02/2025", "dpt_date": "02/03/2025", "days_stay": 2, "room_status": "", "price": 550000,
-              "discount": "5", "hotel_tax": "104500", "ppn": "114950", "service_tax": "0",
-              "total_price": 1248450, "total_payment": 1248450, "change": 0, "payment_method": "Credit Card", "notes": ""},
-
+              "arr_date": "28/02/2025", "dpt_date": "02/03/2025", "days_stay": 2, "room_status": "", 
+              "price": 1000000, "discount": 0, 
+              "hotel_tax": 200000, "ppn": 220000, "service_tax": 0,
+              "total_price": 2420000, "total_payment": 2420000, "change": 0, "payment_method": "Credit Card", "notes": ""},
+    
     "BK010": {"cust_id": "CUST009", "cust_name": "Ina", "reserved_by": "Ina", "room_no": "1002",
-              "arr_date": "03/03/2025", "dpt_date": "06/03/2025", "days_stay": 3, "room_status": "", "price": 350000,
-              "discount": "10", "hotel_tax": "94500", "ppn": "103950", "service_tax": "0",
-              "total_price": 1149450, "total_payment": 1149450, "change": 0, "payment_method": "Bank Transfer", "notes": ""}
+              "arr_date": "03/03/2025", "dpt_date": "06/03/2025", "days_stay": 3, "room_status": "", 
+              "price": 1000000, "discount": 0, 
+              "hotel_tax": 300000, "ppn": 330000, "service_tax": 0,
+              "total_price": 3630000, "total_payment": 3630000, "change": 0, "payment_method": "Bank Transfer", "notes": ""}
 }
 
 def booking_view():
@@ -154,7 +164,7 @@ def booking_view():
     print("\t╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n")
 
     print(f"\t{' Booking ID':<12}{' Cust ID':<10}{' Guest':<15}{' Reserved By':<12}{' Room No':<8}{' Arr Date':<12}{' Dpt Date':<12}{' Days':<5}{' Status':<12}{' Price':<12}{' Discount':<10}{' Tax':<12}{' PPN':<12}{' Service':<12}{' Total':<12}{' Paid':<12}{' Change':<12}{' Method':<12}{' Notes':<10}")
-    print("\t", "=" * 214)  # Lebarkan batas sesuai tambahan kolom
+    print("\t", "=" * 214)
 
     for key, value in booking_dict.items():
         print(f"\t {key:<12}{value['cust_id']:<10}{value['cust_name']:<15}{value['reserved_by']:<12}{value['room_no']:<8}{value['arr_date']:<12}{value['dpt_date']:<12}{value['days_stay']:<5}{value.get('room_status', ''):<12}{value['price']:<12}{value['discount']:<10}{value['hotel_tax']:<12}{value['ppn']:<12}{value['service_tax']:<12}{value['total_price']:<12.2f}{value['total_payment']:<12.2f}{value['change']:<12.2f}{value['payment_method']:<12}{value['notes']:<10}")
@@ -359,7 +369,7 @@ def add_booking():
                 booked_arr = datetime.strptime(booking["arr_date"], "%d/%m/%Y").date()
                 booked_dpt = datetime.strptime(booking["dpt_date"], "%d/%m/%Y").date()
  
-                if not (dpt_date <= booked_arr or arr_date > booked_dpt):  
+                if not (dpt_date <= booked_arr or arr_date >= booked_dpt):  
                     print(f"\tError: Sorry, room {room_no} is already booked from {booked_arr.strftime('%d/%m/%Y')} to {booked_dpt.strftime('%d/%m/%Y')}.")
                     break
         else:
@@ -527,7 +537,7 @@ def amend_booking():
                         booked_arr = datetime.strptime(booking["arr_date"], "%d/%m/%Y").date()
                         booked_dpt = datetime.strptime(booking["dpt_date"], "%d/%m/%Y").date()
 
-                        if not (dpt_date <= booked_arr or arr_date > booked_dpt):
+                        if not (dpt_date <= booked_arr or arr_date >= booked_dpt):
                             print(f"\tError: Room {room_no} is already booked from {booked_arr.strftime('%d/%m/%Y')} to {booked_dpt.strftime('%d/%m/%Y')}.")
                             break
                 else:
@@ -557,9 +567,10 @@ def amend_booking():
     ppn_value = 0.11 * net_price
     service_tax_val = 0
     total_price = net_price + hotel_tax_val + ppn_value + service_tax_val
-    
+    booking = booking_dict[booking_id]
     old_total_payment = booking["total_price"]
     
+    notes = ""
     additional_payment = 0
     if old_total_payment != total_price:
         additional_payment = total_price - old_total_payment
@@ -577,8 +588,10 @@ def amend_booking():
                 except ValueError:
                     print("\tError: Invalid input. Please enter a valid number.")
                     continue
-        else:
+        elif additional_payment == 0:
             total_payment, change = old_total_payment, 0
+        else:
+            additional_payment, total_payment, change, notes = 0, total_price, old_total_payment-total_price, "Partial Cancellation"
     else:
         total_payment, change = old_total_payment, 0
     
@@ -587,8 +600,12 @@ def amend_booking():
         "room_no": room_no,
         "arr_date": arr_date.strftime("%d/%m/%Y"),
         "dpt_date": dpt_date.strftime("%d/%m/%Y"),
+        "days_stay": stay_days,
+        "hotel_tax": hotel_tax_val, "ppn": ppn_value,
         "total_price": total_price,
-        "total_payment": total_payment
+        "total_payment": total_payment,
+        "change": change,
+        "notes": notes
     })
     
     print("\tMessage: Booking updated successfully!")
@@ -603,7 +620,6 @@ def amend_booking():
     print(f"\t  {cust_name}")
     print("\t ────────────────────────────────────────────────────────────────────────────\n")
     print(f"\t  Room Number        : {room_no}")
-    print(f"\t  Adults/Child       : 1")
     print(f"\t  Arrival Date       : {arr_date.strftime('%d/%m/%Y')}")
     print(f"\t  Departure Date     : {dpt_date.strftime('%d/%m/%Y')}")
     print(f"\t  Payment Bill       : {booking_id}")
@@ -630,7 +646,6 @@ def amend_booking():
     print("\t╚════════════════════════════════════════════════════════════════════════════╝\n")
     print("\n\n\t Please check that you have not left any valuables in the in-room personal safe. ")
     print("\tThank you for choosing to stay with us and we wish you a pleasant onward journey.")
-
     update_room_status()
 
 def cancel_booking():
