@@ -2,6 +2,7 @@
 Presented by: Faaza Naima
 
 **🧠 BUSINESS UNDERSTANDING**
+
 🎯 Objective
 Identify the most effective promotional strategy using the Pareto Principle (80/20) to maximize revenue impact.
 
