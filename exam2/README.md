@@ -1,4 +1,4 @@
-# **Strategic Marketing Analysis: Data-Driven Insights for High-Impact Promotions Across Customers, Products, and Campaigns**
+# **STRATEGIC MARKETING ANALYSIS: DATA-DRIVEN INSIGHTS FOR HIGH-IMPACT PROMOTIONS ACROSS CUSTOMERS, PRODUCTS, AND CAMPAIGNS**
 Presented by: Faaza Naima
 
 ---
