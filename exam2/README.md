@@ -231,6 +231,6 @@ Target top 20% of customers (Champions, Loyal) for maximum revenue.
 
 ## **Final Recommendation:**  
 
-Go with **Option 2** for cost-effective, targeted campaigns focused on loyalty and retention.
+Go with Option 2 for cost-effective, targeted campaigns focused on loyalty and retention.
 ---
 
