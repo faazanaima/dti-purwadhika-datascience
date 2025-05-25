@@ -128,7 +128,6 @@ pytest==8.3.5
 python-dateutil==2.9.0.post0
 pytz==2025.2
 pyviz_comms==3.0.4
-pywin32==310
 PyYAML==6.0.2
 pyzmq==26.4.0
 referencing==0.36.2
