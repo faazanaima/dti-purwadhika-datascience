@@ -118,7 +118,7 @@ pluggy==1.6.0
 prompt_toolkit==3.0.51
 protobuf==5.29.4
 psutil==7.0.0
-psycopg2-binary==2.9.6
+psycopg2-binary==2.9.5
 pure_eval==0.2.3
 pyamg==5.2.1
 pyarrow==20.0.0
