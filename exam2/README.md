@@ -67,7 +67,7 @@ To resolve this issue and make informed decisions, the key questions are:
 - Which sales channel is the most effective to target?
 
 ### **4. Answer ✅**
-To effectively drive revenue, use **Pareto Analysis (80/20)** to focus on the 20% of products and customers that generate 80% of the revenue. This analysis will allow the company to:
+To effectively drive revenue, use **Pareto Analysis** to focus on the 20% of products and customers that generate most of the revenue. This analysis will allow the company to:
 - Prioritize the most valuable customer segments, such as Boomers with low working income.
 - Focus on the top 20% of products that contribute to the bulk of the revenue.
 - Target optimal times for promotions based on purchasing patterns.
